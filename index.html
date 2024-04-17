@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>ALVIN - CABUAL</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">CABUAL</div>
+            <ul class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="btn"> 
+                <a href="#" class="action_btn">Sign in</a>
+                <a href="#" class="action_btn">Sign up</a>
+            </div>
+             
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="action_btn">Sign in</a></li>
+                <li><a href="#" class="action_btn">Sign up</a></li>
+        </div>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?'fa-solid fa-xmark'
+                :'fa-solid fa-bars'
+            }
+        </script>
+    </header>
+    <main>
+        <section>
+            <div class="sections" id="first">
+            <div class="card">
+                <div class="cover">
+                    <img src="news-social.jpg" alt="">
+                    <img src="h2wo.jpg" alt=""> 
+                </div>
+                <div class="content">
+                    <br><br>
+                    <h2>LIHIM NA PAGTINGIN</h2>
+                    <p>                    
+                        Sa bawat araw na lumilipas, ang mga alaala natin ay 
+                        nagiging mas malalim at mahalaga. Kahit magkakalayo tayo, 
+                        ang ating mga puso ay magkakasama pa rin. Mahal kita nang walang 
+                        hanggan at umaasa akong magkikita tayo muli.
+                        Mag-ingat ka palagi at alalahanin mong nandito ako, 
+                        patuloy na nagmamahal sa'yo.
+                        Para sayo <br><br> "Joshua Dave Sarefe Mabanglo"       
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
